@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		38CADCF3218EC414009E220C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CADCF2218EC414009E220C /* AppDelegate.swift */; };
-		38CADCF5218EC414009E220C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CADCF4218EC414009E220C /* ViewController.swift */; };
 		38CADCF8218EC414009E220C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CADCF6218EC414009E220C /* Main.storyboard */; };
 		38CADCFA218EC415009E220C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38CADCF9218EC415009E220C /* Assets.xcassets */; };
 		38CADCFD218EC415009E220C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CADCFB218EC415009E220C /* LaunchScreen.storyboard */; };
+		38CADD07218EC994009E220C /* HealthRecordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CADD06218EC994009E220C /* HealthRecordsTableViewController.swift */; };
+		38CADD0C218EC9E5009E220C /* HealthRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CADD0B218EC9E5009E220C /* HealthRecord.swift */; };
+		38CADD0E218EC9F7009E220C /* AddHealthRecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CADD0D218EC9F7009E220C /* AddHealthRecordTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		38CADCEF218EC414009E220C /* VitalTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VitalTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CADCF2218EC414009E220C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		38CADCF4218EC414009E220C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		38CADCF7218EC414009E220C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38CADCF9218EC415009E220C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38CADCFC218EC415009E220C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38CADCFE218EC415009E220C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38CADD06218EC994009E220C /* HealthRecordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthRecordsTableViewController.swift; sourceTree = "<group>"; };
+		38CADD0B218EC9E5009E220C /* HealthRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthRecord.swift; sourceTree = "<group>"; };
+		38CADD0D218EC9F7009E220C /* AddHealthRecordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHealthRecordTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		38CADCF1218EC414009E220C /* VitalTrack */ = {
 			isa = PBXGroup;
 			children = (
+				38CADD0A218EC9B5009E220C /* Screens */,
+				38CADD09218EC9AB009E220C /* Models */,
+				38CADD08218EC9A1009E220C /* Controllers */,
 				38CADCF2218EC414009E220C /* AppDelegate.swift */,
-				38CADCF4218EC414009E220C /* ViewController.swift */,
-				38CADCF6218EC414009E220C /* Main.storyboard */,
 				38CADCF9218EC415009E220C /* Assets.xcassets */,
-				38CADCFB218EC415009E220C /* LaunchScreen.storyboard */,
 				38CADCFE218EC415009E220C /* Info.plist */,
 			);
 			path = VitalTrack;
+			sourceTree = "<group>";
+		};
+		38CADD08218EC9A1009E220C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				38CADD06218EC994009E220C /* HealthRecordsTableViewController.swift */,
+				38CADD0D218EC9F7009E220C /* AddHealthRecordTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		38CADD09218EC9AB009E220C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				38CADD0B218EC9E5009E220C /* HealthRecord.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		38CADD0A218EC9B5009E220C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				38CADCF6218EC414009E220C /* Main.storyboard */,
+				38CADCFB218EC415009E220C /* LaunchScreen.storyboard */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38CADCF5218EC414009E220C /* ViewController.swift in Sources */,
+				38CADD0E218EC9F7009E220C /* AddHealthRecordTableViewController.swift in Sources */,
+				38CADD07218EC994009E220C /* HealthRecordsTableViewController.swift in Sources */,
 				38CADCF3218EC414009E220C /* AppDelegate.swift in Sources */,
+				38CADD0C218EC9E5009E220C /* HealthRecord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ETOR.VitalTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ETOR.VitalTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
