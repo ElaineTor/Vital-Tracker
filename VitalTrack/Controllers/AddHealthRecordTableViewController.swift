@@ -36,6 +36,12 @@ class AddHealthRecordTableViewController: UITableViewController {
         toolBar.setItems([doneButton], animated: false)
         
         //Add done bar code lines here
+        weightTextField.inputAccessoryView = toolBar
+        heartRateTextField.inputAccessoryView = toolBar
+        bloodPressureTextField.inputAccessoryView = toolBar
+        oxygenTextField.inputAccessoryView = toolBar
+        temperatureTextField.inputAccessoryView = toolBar
+        additionalNotesTextField.inputAccessoryView = toolBar
         
         //add new health record
         if let newHealthData = newHealthRecord {
