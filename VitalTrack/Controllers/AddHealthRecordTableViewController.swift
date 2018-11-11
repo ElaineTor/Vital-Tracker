@@ -89,6 +89,8 @@ class AddHealthRecordTableViewController: UITableViewController {
             
         case [0,1]:
             return !isDatePickerHidden ? pickerHeight: hiddenHeight
+        case [6,0]:
+            return pickerHeight
         default:
             return normalHeight
         }

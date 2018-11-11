@@ -40,7 +40,7 @@ class HealthRecordsTableViewController: UITableViewController {
             let health = healthRecords[indexPath.row]
             
             cell.textLabel?.text = health.Date
-            cell.detailTextLabel?.text = "Weight \(health.Weight!)kg, BP: \(health.BloodPressure!), Temp: \(health.Temp!)"
+            cell.detailTextLabel?.text = "Weight: \(health.Weight!)kg, BP: \(health.BloodPressure!), HR: \(health.HeartRate!), Temp: \(health.Temp!)"
             
             return cell
         

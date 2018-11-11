@@ -19,16 +19,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rY2-yR-rIg">
-                                <rect key="frame" x="50" y="170" width="275" height="297"/>
+                                <rect key="frame" x="50" y="220" width="275" height="247"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember to enter information daily. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnP-C0-Ei6">
-                                        <rect key="frame" x="11.5" y="0.0" width="252.5" height="276"/>
+                                        <rect key="frame" x="11.5" y="0.0" width="252.5" height="226"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by Elaine Tor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jE2-V7-fT6">
-                                        <rect key="frame" x="50" y="276" width="175" height="21"/>
+                                        <rect key="frame" x="50" y="226" width="175" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="qt0-gP-cjw"/>
                                         </constraints>
@@ -41,10 +41,17 @@
                                     <constraint firstItem="jE2-V7-fT6" firstAttribute="leading" secondItem="rY2-yR-rIg" secondAttribute="leading" constant="50" id="SrF-vb-vJv"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled design-2" translatesAutoresizingMaskIntoConstraints="NO" id="mD5-lK-TTd">
+                                <rect key="frame" x="67" y="84" width="241" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="rY2-yR-rIg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="P7T-w3-tEj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mD5-lK-TTd" secondAttribute="trailing" constant="67" id="4NS-Ek-Afq"/>
+                            <constraint firstItem="mD5-lK-TTd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="75E-qR-Mmh"/>
+                            <constraint firstItem="mD5-lK-TTd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="N1H-X0-JiW"/>
+                            <constraint firstItem="rY2-yR-rIg" firstAttribute="top" secondItem="mD5-lK-TTd" secondAttribute="bottom" constant="8" id="Ojs-Bb-bj7"/>
+                            <constraint firstItem="rY2-yR-rIg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="P7T-w3-tEj"/>
                             <constraint firstAttribute="trailing" secondItem="rY2-yR-rIg" secondAttribute="trailing" constant="50" id="gwk-Wn-Znj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rY2-yR-rIg" secondAttribute="bottom" constant="200" id="vLt-2W-Scz"/>
                             <constraint firstItem="rY2-yR-rIg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="w1g-co-JHS"/>
@@ -57,4 +64,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Untitled design-2" width="768" height="768"/>
+    </resources>
 </document>

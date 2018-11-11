@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Saved Data-->
+        <!--Saved Health Data-->
         <scene sceneID="1xr-NL-5xs">
             <objects>
                 <tableViewController id="hn1-Ir-0b2" customClass="HealthRecordsTableViewController" customModule="VitalTrack" customModuleProvider="target" sceneMemberID="viewController">
@@ -51,7 +51,7 @@
                             <outlet property="delegate" destination="hn1-Ir-0b2" id="Xgv-Kf-ipL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Saved Data" id="okT-J8-3A9">
+                    <navigationItem key="navigationItem" title="Saved Health Data" id="okT-J8-3A9">
                         <barButtonItem key="leftBarButtonItem" systemItem="edit" id="bY1-Qo-Sga">
                             <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                         </barButtonItem>
@@ -67,7 +67,7 @@
             </objects>
             <point key="canvasLocation" x="631" y="-72"/>
         </scene>
-        <!--Enter New Data-->
+        <!--Enter Data-->
         <scene sceneID="Zxy-uC-46Q">
             <objects>
                 <tableViewController id="2b3-Xf-bck" customClass="AddHealthRecordTableViewController" customModule="VitalTrack" customModuleProvider="target" sceneMemberID="viewController">
@@ -89,7 +89,7 @@
                                                     <rect key="frame" x="10" y="0.0" width="355" height="49.5"/>
                                                     <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                    <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -271,16 +271,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mjj-K9-2PX">
-                                                    <rect key="frame" x="10" y="0.0" width="355" height="99.5"/>
+                                                    <rect key="frame" x="10" y="0.0" width="355" height="111.5"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
                                                 </textView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="Mjj-K9-2PX" secondAttribute="trailing" constant="10" id="A04-Rm-fhb"/>
                                                 <constraint firstItem="Mjj-K9-2PX" firstAttribute="leading" secondItem="Bp5-Ar-tja" secondAttribute="leading" constant="10" id="ICv-Bz-ll5"/>
-                                                <constraint firstAttribute="bottom" secondItem="Mjj-K9-2PX" secondAttribute="bottom" id="M8l-9t-AH8"/>
+                                                <constraint firstAttribute="bottom" secondItem="Mjj-K9-2PX" secondAttribute="bottom" constant="-12" id="M8l-9t-AH8"/>
                                                 <constraint firstItem="Mjj-K9-2PX" firstAttribute="top" secondItem="Bp5-Ar-tja" secondAttribute="top" id="ifI-hd-ry6"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -293,7 +293,7 @@
                             <outlet property="delegate" destination="2b3-Xf-bck" id="7jS-b6-eiH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Enter New Data" id="xzl-sa-IdY">
+                    <navigationItem key="navigationItem" title="Enter Data" id="xzl-sa-IdY">
                         <barButtonItem key="leftBarButtonItem" systemItem="save" id="npL-5e-4Tr">
                             <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -370,6 +370,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="28N-cg-gn9"/>
+        <segue reference="FCB-7a-SXz"/>
     </inferredMetricsTieBreakers>
 </document>
